@@ -1,0 +1,17 @@
+.banner {
+  background-image: asset-url('jeju.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  padding: 150px;
+
+}
+
+.banner p {
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+}

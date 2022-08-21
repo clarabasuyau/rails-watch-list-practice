@@ -1,0 +1,16 @@
+<div class="banner mb-5" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "jeju.jpg" %>')">
+  <div class="container">
+    <p><span data-controller="typed-js"></span></p>
+  </div>
+</div>
+
+
+<div class="cards row justify-content-around">
+  <% @lists.each do |list| %>
+    <div class="card mt-1em" style="width: 30vw">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "horror.jpeg" %>')">
+        <%= link_to list.name, list_path(list) %>
+      </div>
+    </div>
+  <% end %>
+</div>
